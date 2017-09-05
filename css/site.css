@@ -1,0 +1,162 @@
+body{
+    font-family: "Crimson Text", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1, h2{
+    font-family: "Open Sans Condensed", "Arial", sans-serif; 
+}
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 5px 5px #000;
+}
+.titulo-principal{
+    color: #FAFFFA;
+    text-align: center;
+    background-color: #851944;
+    padding: 2rem;
+    margin: 0px;
+    border-bottom: .5rem solid #000;
+    position: relative;
+    /*background-image: linear-gradient(to bottom, #F00, #888 80%, #000);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;*/
+}
+h2{
+    font-size: 200%;
+    clear: both;
+}
+main div{
+    width: 93ch;
+    margin: auto;
+    padding: 30px 0;
+}
+main p a{
+    color: #851944;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.navegacao-site {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 1em;
+    text-align: center;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    clear: right;    
+    width: 20%;
+    
+    /* removemos position e top, além do float, já removido acima */
+    padding-top: calc(300px + 1em);
+}
+nav h1{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: lowercase;    
+    line-height: 1.5;
+    
+}
+.icones-sociais li{
+    display: inline-block;
+}
+.icones-sociais a{
+    width: 6ch;
+    height: 6ch;
+    display: inline-block;
+    text-indent: -99999px;
+    position: relative;
+}
+.icones-sociais a:hover:after, .icones-sociais a:focus:after{
+    content: attr(data-legenda);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+    color: white;
+}
+.icones-sociais a:hover:before, .icones-sociais a:focus:before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+}
+.rodape{
+    /*background-color: rgba(0, 0, 0, .3);*/
+    background-image: radial-gradient(ellipse at left bottom , 
+    rgba(60, 29, 61, .8),
+    rgba(60, 29, 61, .8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+    width: 100%;
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    color: #000;
+    padding: 1em;
+    clear: both;
+}
+strong{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+.github{
+    background-image: url(../img/github.png);
+}
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+.linkedin{
+    background-image: url(../img/linkedin.png);
+}
+.navegacao-site, .minha-foto{
+    float: right;
+    border-left: .5em solid #000;
+    box-sizing: border-box;
+}
+main{
+    flex-grow: 1;
+}
+.minha-foto{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom: .5em solid black;
+}
+.subtitulo-principal{
+    font-size: 1em;
+    text-align: center;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+main a:hover, main a:focus,
+footer a:hover, footer a:focus{
+    color: red;
+}
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}
+a{
+    text-decoration: none;
+}

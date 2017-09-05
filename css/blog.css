@@ -1,0 +1,20 @@
+.leia-mais{
+    padding: .5em;
+    margin: 1em;
+    display: block;
+    font-size: 1.5em;
+    background-color: #E6E7E8;
+    text-align: center;
+    color: #851944;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-decoration: none;
+}
+.post-blog + .post-blog{
+    padding-top: 1.5em;
+    /*border-bottom: .1em solid #ccc;*/
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 1px;
+    margin-top: 1em;
+}
